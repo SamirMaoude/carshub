@@ -27,7 +27,7 @@
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-						<span class="sr-only">Toggle Navigation</span>
+						<span class="sr-only">Navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -43,11 +43,11 @@
 							<a href="{{ url('/') }}"><i class="fa fa-home"></i> Accueil</a>
 						</li>
 						<li>
-							<a href="Contact"><i class="fa fa-comment"></i> Contact</a>
+							<a href="Contact"><i class="fa fa-comment"></i> Contacter</a>
 						</li>
 						@if (Auth::guest())
 						<li>
-							<a href="login"><i class="fa fa-lock"></i> Login</a>
+							<a href="login"><i class="fa fa-lock"></i> Connexion</a>
 						</li>
 						<li>
 							<a href="register"><i class="fa fa-user"></i> Inscription</a>

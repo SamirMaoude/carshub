@@ -28,7 +28,7 @@
 	</div>
 
 	<div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
-		<label class="col-md-2 control-label">Price</label>
+		<label class="col-md-2 control-label">Prix</label>
 		<div class="col-md-6">
 			<input  type="number" class="form-control" name="price" value="{{ $voiture->price }}">
 			@if ($errors->has('price'))

@@ -57,7 +57,7 @@ class VoitureController extends Controller {
 			$input['total'] = $total;
 			$demande = Demande::create($input);
 			if ($demande) {
-				return redirect('ListVoiture') -> with('success', 'Demande created successfully!');
+				return redirect('ListVoiture') -> with('success', 'Demande créée avec succès!');
 			}
 		}
 	}

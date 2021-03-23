@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Database\Seeders\UserTableSeeder;
+use Illuminate\Database\Eloquent\Model;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,7 +18,7 @@ class DatabaseSeeder extends Seeder
         
         $this->call(RoleTableSeeder::class);
         $this->call(AdminTableSeeder::class);
-        $this->call(UserTableSeeder::class);
+        //$this->call(UserTableSeeder::class);
         $this->call(VoitureTableSeeder::class);
     }
 }

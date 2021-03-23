@@ -51,7 +51,7 @@ class VoitureController extends Controller {
 
 			$voiture = Voiture::create($input);
 			if ($voiture) {
-				return redirect('GestionVoiture') -> with('success', 'Voiture created successfully!');
+				return redirect('GestionVoiture') -> with('success', 'Voiture créée avec succès!');
 			}
 		}
 	}
@@ -104,7 +104,7 @@ class VoitureController extends Controller {
 		}
 		$voiture = Voiture::findOrFail($id) -> update($input);
 		if ($voiture) {
-			return redirect('GestionVoiture') -> with('info', 'Voiture Updated successfully!');
+			return redirect('GestionVoiture') -> with('info', 'Mise à jour effectuée!');
 		}
 	}
 
@@ -119,7 +119,7 @@ class VoitureController extends Controller {
 		$img = $voiture['image'];
 		$voiture -> delete();
 		unlink($img);
-		return redirect() -> back() -> with('success', 'Voiture deleted successfully!');
+		return redirect() -> back() -> with('success', 'Voiture supprimée avec succès!');
 	}
 
 }

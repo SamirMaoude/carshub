@@ -4,7 +4,7 @@
 
 {!! Form::open(array('class'=>'form-horizontal','route'=>'GestionVoiture.store','files'=>true)) !!}
 <div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">
-	<label  class="col-md-4 control-label">Title</label>
+	<label  class="col-md-4 control-label">Titre</label>
 	<div class="col-md-6">
 		<input type="text" class="form-control" name="title" >
 		@if ($errors->has('title'))
@@ -24,7 +24,7 @@
 </div>
 
 <div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
-	<label class="col-md-4 control-label">Price</label>
+	<label class="col-md-4 control-label">Prix</label>
 	<div class="col-md-6">
 		<input  type="number" class="form-control" name="price">
 		@if ($errors->has('price'))

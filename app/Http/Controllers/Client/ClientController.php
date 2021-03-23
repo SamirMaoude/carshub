@@ -30,7 +30,7 @@ class ClientController extends Controller {
 			$id = Auth::user() -> id;
 			$user = User::findOrFail($id) -> update($input);
 			if ($user) {
-				return redirect('SettingClient') -> with('info', 'Setting Updated successfully!');
+				return redirect('SettingClient') -> with('info', 'Paramètres à jour!');
 			}
 		}
 		return view('client.action.setting');
@@ -46,7 +46,7 @@ class ClientController extends Controller {
 			$input['password'] = bcrypt($input['password']);
 			$user = User::findOrFail($id) -> update($input);
 			if ($user) {
-				return redirect('PasswordClient') -> with('info', 'Password Updated successfully!');
+				return redirect('PasswordClient') -> with('info', 'Mot de passe à jour!');
 			}
 		}
 		return view('client.action.password');

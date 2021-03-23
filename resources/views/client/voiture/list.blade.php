@@ -19,7 +19,7 @@
 								{{ $myvoiture->description }}
 							</p>
 							<h1>{{ $myvoiture->title }}</h1>
-							<span class="price-new"> {{ $myvoiture->price }} Dt/j</span>
+							<span class="price-new"> {{ $myvoiture->price }} Fcfa/j</span>
 						</div>
 					</div>
 				</div>

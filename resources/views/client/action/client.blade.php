@@ -3,7 +3,7 @@
 @section('content')
 <div class="container admin">
 	<button class="btn btn-default btn-lg" type="button">
-		<h5 class="total-price text-right"><i class="fa fa-shopping-basket fa-fw fa-2x"></i> Price Total : <span>{{ $total }} Dt</span></h5>
+		<h5 class="total-price text-right"><i class="fa fa-shopping-basket fa-fw fa-2x"></i> Prix Total : <span>{{ $total }} Fcfa</span></h5>
 	</button>
 	<button class="btn btn-info btn-lg" type="button">
 		Nombre de Demande <span class="badge">{{ $demande }}</span>

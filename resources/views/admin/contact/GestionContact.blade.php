@@ -43,7 +43,7 @@
 							Email : {{ $mycontact->email }}
 						</div>
 						<div class="form-group">
-							Subject : {{ $mycontact->subject }}
+							Sujet : {{ $mycontact->subject }}
 						</div>
 						<div class="form-group">
 							Message : {{ $mycontact->message }}
@@ -51,7 +51,7 @@
 					</div>
 					<div class="modal-footer ">
 						<button type="button" class="btn btn-danger" data-dismiss="modal">
-							<span class="fa fa-remove"></span> Close
+							<span class="fa fa-remove"></span> Fermer
 						</button>
 					</div>
 				</div>
@@ -64,22 +64,22 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							<span class="fa fa-remove" aria-hidden="true"></span>
 						</button>
-						<h4 class="modal-title custom_align" id="Heading">Delete this item: {{ $mycontact->id }}</h4>
+						<h4 class="modal-title custom_align" id="Heading">Supprimer cet élément: {{ $mycontact->id }}</h4>
 					</div>
 					<div class="modal-body">
 						<div class="alert alert-danger">
-							<span class="fa fa-warning-sign"></span> Are you sure you want to delete this Record?
+							<span class="fa fa-warning-sign"></span> Êtes-vous sûr de supprimer cet élément?
 						</div>
 					</div>
 					<div class="modal-footer ">
 						{!! Form::open(['method'=>'DELETE', 'route'=>['GestionContact.destroy',$mycontact->id]]) !!}
 						<button  class="btn btn-success" type="submit">
-							<span class="fa fa-check"></span> Yes
+							<span class="fa fa-check"></span> Oui
 						</button>
 						{!! Form::close() !!}
 
 						<button type="button" class="btn btn-default" data-dismiss="modal">
-							<span class="fa fa-remove"></span> No
+							<span class="fa fa-remove"></span> Non
 						</button>
 					</div>
 				</div>

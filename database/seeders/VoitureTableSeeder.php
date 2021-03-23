@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class VoitureTableSeeder extends Seeder
 {
@@ -13,6 +14,8 @@ class VoitureTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $path = public_path('carshub.sql');
+        $sql = file_get_contents($path);
+        DB::unprepared($sql);
     }
 }

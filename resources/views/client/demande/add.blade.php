@@ -14,7 +14,7 @@
 	</div>
 </div>
 <div class="form-group{{ $errors->has('tel') ? ' has-error' : '' }}">
-	<label class="col-md-4 control-label">Telephone</label>
+	<label class="col-md-4 control-label">Téléphone</label>
 	<div class="col-md-6">
 		<input  type="tel" class="form-control" name="tel" >
 		@if ($errors->has('tel'))
@@ -23,7 +23,7 @@
 	</div>
 </div>
 <div class="form-group{{ $errors->has('dateDebut') ? ' has-error' : '' }}">
-	<label class="col-md-4 control-label">Datedebut</label>
+	<label class="col-md-4 control-label">Date debut</label>
 	<div class="col-md-6">
 		<input type="date" class="form-control" name="dateDebut">
 		@if ($errors->has('dateDebut'))
@@ -32,7 +32,7 @@
 	</div>
 </div>
 <div class="form-group{{ $errors->has('nmbejour') ? ' has-error' : '' }}">
-	<label class="col-md-4 control-label">N' Jour</label>
+	<label class="col-md-4 control-label">Nb Jour</label>
 	<div class="col-md-6">
 		<input  type="number" class="form-control" name="nmbejour">
 		@if ($errors->has('nmbejour'))

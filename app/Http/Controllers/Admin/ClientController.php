@@ -57,7 +57,7 @@ class ClientController extends Controller {
 				$p -> user_id = $user -> id;
 				$p -> save();
 				if ($p) {
-					return redirect('GestionClient') -> with('success', 'User created successfully!');
+					return redirect('GestionClient') -> with('success', 'Utilisateur créé avec succès!');
 				}
 			}
 		}
@@ -107,7 +107,7 @@ class ClientController extends Controller {
 		if ($role) {
 			$user = User::FindOrFail($id) -> delete();
 			if ($user) {
-				return redirect() -> back() -> with('info', 'User deleted successfully!');
+				return redirect() -> back() -> with('info', 'Utilisateur supprimé avec succès!');
 			}
 		}
 

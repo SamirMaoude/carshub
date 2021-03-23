@@ -2,7 +2,7 @@
 
 @section('content')
 <h5 class="total-price"><i class="fa fa-shopping-basket fa-fw fa-2x"></i>
-	 Price Total : <span>{{ $total }} Dt</span>  </h5>
+	 Price Total : <span>{{ $total }} Fcfa</span>  </h5>
 <hr />
 <table id="mytable" class="table table-bordred table-striped">
 	<thead>
@@ -10,7 +10,7 @@
 		<th>Telephone</th>
 		<th>Date Debut</th>
 		<th>Voiture</th>
-		<th>N' Jour'</th>
+		<th>Nb Jour</th>
 		<th>Total</th>
 		<th>Delete</th>
 	</thead>
@@ -37,22 +37,22 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							<span class="fa fa-remove" aria-hidden="true"></span>
 						</button>
-						<h4 class="modal-title custom_align" id="Heading">Delete this item: {{ $mydmd->id }}</h4>
+						<h4 class="modal-title custom_align" id="Heading">Supprimer cet élément: {{ $mydmd->id }}</h4>
 					</div>
 					<div class="modal-body">
 						<div class="alert alert-danger">
-							<span class="fa fa-warning-sign"></span> Are you sure you want to delete this Record?
+							<span class="fa fa-warning-sign"></span> Êtes-vous sûr de supprimer cet élément?
 						</div>
 					</div>
 					<div class="modal-footer ">
 						{!! Form::open(['method'=>'DELETE']) !!}
 						<button  class="btn btn-success" type="submit">
-							<span class="fa fa-check"></span> Yes
+							<span class="fa fa-check"></span> Oui
 						</button>
 						{!! Form::close() !!}
 
 						<button type="button" class="btn btn-default" data-dismiss="modal">
-							<span class="fa fa-remove"></span> No
+							<span class="fa fa-remove"></span> Non
 						</button>
 					</div>
 				</div>

@@ -31,7 +31,7 @@ class AdminController extends Controller {
 			$id = Auth::user() -> id;
 			$user = User::findOrFail($id) -> update($input);
 			if ($user) {
-				return redirect('Setting') -> with('info', 'Setting Updated successfully!');
+				return redirect('Setting') -> with('info', 'Mise à jour des paramètre effectuée!');
 			}
 		}
 		return view('admin.action.setting');
@@ -48,7 +48,7 @@ class AdminController extends Controller {
 			$input['password'] = bcrypt($input['password']);
 			$user = User::findOrFail($id) -> update($input);
 			if ($user) {
-				return redirect('Password') -> with('info', 'Password Updated successfully!');
+				return redirect('Password') -> with('info', 'Mise à jour du mot de passe réussie!');
 			}
 		}
 		return view('admin.action.password');

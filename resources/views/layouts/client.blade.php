@@ -28,7 +28,7 @@
 
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
+						<span class="sr-only">Navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -45,10 +45,10 @@
 
 						<ul class="dropdown-menu" role="menu">
 							<li>
-								<a href="SettingClient"><i class="fa fa-fw fa-user"></i> Edit Profile</a>
+								<a href="SettingClient"><i class="fa fa-fw fa-user"></i> Editer Profil</a>
 							</li>
 							<li>
-								<a href="PasswordClient"><i class="fa fa-fw fa-cog"></i> Change Password</a>
+								<a href="PasswordClient"><i class="fa fa-fw fa-cog"></i> Changer mot de passe</a>
 							</li>
 							<li>
 								<a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Déconnexion</a>

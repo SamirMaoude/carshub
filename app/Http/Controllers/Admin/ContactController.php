@@ -79,7 +79,7 @@ class ContactController extends Controller {
 	public function destroy($id) {
 		$cont = Contact::FindOrFail($id) -> delete();
 		if ($cont) {
-			return redirect() -> back() -> with('info', 'Message deleted successfully!');
+			return redirect() -> back() -> with('info', 'Message supprimé avec succès!');
 		}
 
 	}
