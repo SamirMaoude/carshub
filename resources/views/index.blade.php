@@ -4,7 +4,7 @@
 <div class="head-index">
 	<div class="head">
 		<div class="container">
-			<h1>Bienvenue à Agence de Location</h1>
+			<h1>Bienvenue à CarsHub</h1>
 		</div>
 	</div>
 </div>

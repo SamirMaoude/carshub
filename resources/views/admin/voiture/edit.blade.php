@@ -4,7 +4,7 @@
 <div class="col-md-3">
 	<img class="img-responsive" src="{{ asset( $voiture->image)}}" />
 </div>
-{!! Form::model($voiture, array('class'=>'form-horizontal', 'method'=>'PATCH','action'=>['Admin\VoitureController@update',$voiture->id],'files'=>true)) !!}
+{!! Form::model($voiture, array('class'=>'form-horizontal', 'method'=>'PATCH','action'=>['App\Http\Controllers\Admin\VoitureController@update',$voiture->id],'files'=>true)) !!}
 <input type="hidden" name="photo" value="{{ $voiture->image }}" />
 <div class="col-md-9">
 	<div class="form-group{{ $errors->has('title') ? ' has-error' : '' }}">

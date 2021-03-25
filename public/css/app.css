@@ -19,14 +19,14 @@
 	width: 200px;
 }
 .navbar-default .navbar-toggle {
-	border-color: #a94442;
+	border-color: #683130;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #a94442;
 }
 .head-index {
-	background: url('../images/slid1.jpg') 50% 0 repeat fixed;
-	height: 400px;
+	background: url('../images/banner.jpg') 50% 0 no-repeat fixed;
+	height: auto;
 	margin-bottom: 50px;
 }
 .head-index .head {
@@ -41,7 +41,7 @@
 
 #head.secondary {
 	padding-top: 0px;
-	background: #3d84e6;
+	background: #619bb6;
 	background-size: cover;
 	text-align: center;
 	padding: 25px 0;
@@ -132,7 +132,7 @@
 .voiture .col-item .price-details span {
 	float: right;
 	color: #fff;
-	background: #F44336;
+	background: #5cf436;
 	padding: 5px 10px;
 	border-radius: 5px;
 	z-index: 1;
@@ -263,7 +263,7 @@
 	height: 30px;
 }
 .profil a {
-	color: red !important;
+	color: burlywood !important;
 	text-decoration: underline;
 }
 /* footer */
